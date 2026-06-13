@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b8tru6cw8y4kc"]
+
+[ext_resource type="Script" uid="uid://j0elmd3sggsx" path="res://scripts/foundation_slot.gd" id="1_sn46t"]
+
+[node name="FoundationSlot" type="PanelContainer" unique_id=764163631]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_sn46t")
+
+[node name="Content" type="VBoxContainer" parent="." unique_id=1235849180]
+layout_mode = 2
+
+[node name="HeaderLabel" type="Label" parent="Content" unique_id=812044515]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 14
+text = "Empty
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CardStack" type="VBoxContainer" parent="Content" unique_id=875556809]
+layout_mode = 2
+theme_override_constants/separation = 0

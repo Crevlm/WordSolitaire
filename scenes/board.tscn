@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://3gyo13qie2e6"]
+
+[ext_resource type="PackedScene" uid="uid://bii8iu2p50trh" path="res://scenes/Card.tscn" id="1_bw3vb"]
+[ext_resource type="Script" uid="uid://c0rr5kkikpsd2" path="res://scripts/board.gd" id="1_tx6nw"]
+[ext_resource type="PackedScene" uid="uid://b8tru6cw8y4kc" path="res://scenes/foundation_slot.tscn" id="2_nglv8"]
+
+[node name="Board" type="Control" unique_id=2066014889]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_tx6nw")
+
+[node name="MainLayout" type="VBoxContainer" parent="." unique_id=1784400170]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Foundation Area" type="HBoxContainer" parent="MainLayout" unique_id=550711390]
+layout_mode = 2
+alignment = 1
+
+[node name="FoundationSlot" parent="MainLayout/Foundation Area" unique_id=764163631 instance=ExtResource("2_nglv8")]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="FoundationSlot2" parent="MainLayout/Foundation Area" unique_id=1883540467 instance=ExtResource("2_nglv8")]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="FoundationSlot3" parent="MainLayout/Foundation Area" unique_id=1352452121 instance=ExtResource("2_nglv8")]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="FoundationSlot4" parent="MainLayout/Foundation Area" unique_id=1720512723 instance=ExtResource("2_nglv8")]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="Tableau" type="HBoxContainer" parent="MainLayout" unique_id=924111302]
+layout_mode = 2
+
+[node name="Column1" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=1486628751]
+layout_mode = 2
+
+[node name="Card" parent="MainLayout/Tableau/Column1" unique_id=456300549 instance=ExtResource("1_bw3vb")]
+layout_mode = 2
+word = "Animals"
+category = "Animals"
+is_category_card = true
+
+[node name="Column2" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=184273771]
+layout_mode = 2
+
+[node name="Card" parent="MainLayout/Tableau/Column2" unique_id=276978670 instance=ExtResource("1_bw3vb")]
+layout_mode = 2
+word = "Cat"
+category = "Animals"
+
+[node name="Column3" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=155470765]
+layout_mode = 2
+
+[node name="Card" parent="MainLayout/Tableau/Column3" unique_id=1606529656 instance=ExtResource("1_bw3vb")]
+layout_mode = 2
+
+[node name="Column4" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=595550167]
+layout_mode = 2
+
+[node name="Card2" parent="MainLayout/Tableau/Column4" unique_id=617339873 instance=ExtResource("1_bw3vb")]
+layout_mode = 2
+word = "Nail"
+
+[node name="Column5" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=1952225119]
+layout_mode = 2
+
+[node name="Card" parent="MainLayout/Tableau/Column5" unique_id=1933959540 instance=ExtResource("1_bw3vb")]
+layout_mode = 2
+word = "Apple"
+category = "Fruit"
+
+[node name="Column6" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=514835604]
+layout_mode = 2
+
+[node name="Card" parent="MainLayout/Tableau/Column6" unique_id=739165022 instance=ExtResource("1_bw3vb")]
+layout_mode = 2
+word = "Pear"
+category = "Fruit"
+
+[node name="Column7" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=40607983]
+layout_mode = 2
+
+[node name="Card" parent="MainLayout/Tableau/Column7" unique_id=1603665433 instance=ExtResource("1_bw3vb")]
+layout_mode = 2

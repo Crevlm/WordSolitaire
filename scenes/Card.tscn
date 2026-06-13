@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bii8iu2p50trh"]
+
+[ext_resource type="Script" uid="uid://djwkbtin28cif" path="res://scripts/card.gd" id="1_dd2wi"]
+
+[node name="Card" type="Button" unique_id=456300549]
+custom_minimum_size = Vector2(90, 140)
+offset_right = 48.0
+offset_bottom = 60.0
+script = ExtResource("1_dd2wi")
+word = "Hammer"
+category = "Tools"
+
+[node name="WordLabel" type="Label" parent="." unique_id=1180846392]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 89.0
+offset_bottom = 138.0
+text = "Dog
+"
+horizontal_alignment = 1
+vertical_alignment = 1
