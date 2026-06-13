@@ -5,6 +5,7 @@ signal card_clicked(card)
 @export var word: String = "Dog"
 @export var category: String = "Animals"
 @export var is_category_card: bool = false
+@export var required_count: int = 0
 
 @onready var word_label = $WordLabel
 
