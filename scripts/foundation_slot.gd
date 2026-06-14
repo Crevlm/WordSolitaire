@@ -14,6 +14,7 @@ var is_complete: bool = false
 func _ready():
 	header_label.text = "Empty"
 
+
 func _can_drop_data(position, data):
 	if is_complete:
 		return false
@@ -22,6 +23,7 @@ func _can_drop_data(position, data):
 		return data.is_category_card
 	# Filled slot accepts matching word cards
 	return data.is_category_card == false and data.category == category and current_count < required_count
+
 
 func _drop_data(position, data):
 
@@ -57,12 +59,12 @@ func update_header():
 	else:
 		header_label.text = category + " " + str(current_count) + "/" + str(required_count)
 		
-		
+# Returns true if this foundation pile can accept the word card.	
 func can_accept_word_card(card):
 	return card.is_category_card == false and card.category == category and current_count < required_count
 	
 	
-	
+# Adds a word card to the foundation pile and updates progress.
 func add_word_card(card):
 	if not can_accept_word_card(card):
 		return

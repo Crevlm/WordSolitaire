@@ -30,6 +30,7 @@ func _get_drag_data(position):
 	print("Dragging: " + word)
 	return self
 
+#Determines whether a dragged card can be dropped on this card
 func _can_drop_data(position, data):
 	if data == self:
 		return false
@@ -43,7 +44,7 @@ func _can_drop_data(position, data):
 		
 	return data.category == category
 	
-# Prints whether or not a drag/drop is valid	
+# Handles card drops in tableau and foundation piles
 func _drop_data(position, data):
 	print("Valid drop: " + data.word + " onto " + word)
 
