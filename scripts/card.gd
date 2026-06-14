@@ -33,8 +33,28 @@ func _get_drag_data(position):
 func _can_drop_data(position, data):
 	if data == self:
 		return false
+		
+
+	# Cards inside a foundation pile can accept drops only if the pile is not complete.
+	if get_parent().name == "CardStack":
+		var foundation_slot = get_parent().get_parent().get_parent()
+		return foundation_slot.can_accept_word_card(data)
+		
+		
 	return data.category == category
 	
+# Prints whether or not a drag/drop is valid	
 func _drop_data(position, data):
 	print("Valid drop: " + data.word + " onto " + word)
+
+	# If this card is inside a foundation pile,
+	# let the FoundationSlot handle the drop/count.
+	if get_parent().name == "CardStack":
+		var foundation_slot = get_parent().get_parent().get_parent()
+		foundation_slot.add_word_card(data)
+		return
+
+	# Otherwise this is normal tableau movement.
 	data.reparent(get_parent())
+	
+	

@@ -47,6 +47,7 @@ layout_mode = 2
 word = "Animals"
 category = "Animals"
 is_category_card = true
+required_count = 2
 
 [node name="Column2" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=184273771]
 layout_mode = 2
@@ -61,6 +62,8 @@ layout_mode = 2
 
 [node name="Card" parent="MainLayout/Tableau/Column3" unique_id=1606529656 instance=ExtResource("1_bw3vb")]
 layout_mode = 2
+word = "Cow"
+category = "Animals"
 
 [node name="Column4" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=595550167]
 layout_mode = 2
