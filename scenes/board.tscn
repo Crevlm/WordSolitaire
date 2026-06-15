@@ -60,14 +60,6 @@ layout_mode = 2
 layout_mode = 2
 word = "Cat"
 category = "Animals"
-is_face_down = true
-
-[node name="Card" parent="MainLayout/Tableau/Column2" unique_id=456300549 instance=ExtResource("1_bw3vb")]
-layout_mode = 2
-word = "Animals"
-category = "Animals"
-is_category_card = true
-required_count = 2
 
 [node name="Column3" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=93828439]
 layout_mode = 2
