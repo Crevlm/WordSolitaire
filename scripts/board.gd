@@ -30,3 +30,18 @@ func _on_card_clicked(card):
 	card.set_selected(true)
 	print("Selected: " + card.word)
 	
+func reveal_top_card(column):
+	print("Reveal check on: " + column.name)
+
+	if column.get_child_count() == 0:
+		print("Column empty")
+		return
+
+	var top_card = column.get_child(column.get_child_count() - 1)
+	print("Top card is: " + top_card.word)
+
+	if top_card.is_face_down:
+		print("Revealing: " + top_card.word)
+		top_card.reveal()
+	else:
+		print("Top card already face up")

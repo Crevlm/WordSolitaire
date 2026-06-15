@@ -10,6 +10,15 @@ script = ExtResource("1_dd2wi")
 word = "Hammer"
 category = "Tools"
 
+[node name="CardBack" type="ColorRect" parent="." unique_id=2012565003]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.027988922, 8.4228816e-07, 0.4042915, 1)
+
 [node name="WordLabel" type="Label" parent="." unique_id=1180846392]
 layout_mode = 0
 offset_top = 1.0

@@ -39,40 +39,43 @@ layout_mode = 2
 [node name="Tableau" type="HBoxContainer" parent="MainLayout" unique_id=924111302]
 layout_mode = 2
 
-[node name="Column1" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=1486628751]
+[node name="Column1" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=1373387894]
+layout_mode = 2
+theme_override_constants/separation = -120
+
+[node name="Card3" parent="MainLayout/Tableau/Column1" unique_id=1606529656 instance=ExtResource("1_bw3vb")]
+layout_mode = 2
+word = "Cow"
+category = "Animals"
+is_face_down = true
+
+[node name="Card4" parent="MainLayout/Tableau/Column1" unique_id=617339873 instance=ExtResource("1_bw3vb")]
+layout_mode = 2
+word = "Nail"
+
+[node name="Column2" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=1513865066]
 layout_mode = 2
 
-[node name="Card" parent="MainLayout/Tableau/Column1" unique_id=456300549 instance=ExtResource("1_bw3vb")]
+[node name="Card2" parent="MainLayout/Tableau/Column2" unique_id=276978670 instance=ExtResource("1_bw3vb")]
+layout_mode = 2
+word = "Cat"
+category = "Animals"
+is_face_down = true
+
+[node name="Card" parent="MainLayout/Tableau/Column2" unique_id=456300549 instance=ExtResource("1_bw3vb")]
 layout_mode = 2
 word = "Animals"
 category = "Animals"
 is_category_card = true
 required_count = 2
 
-[node name="Column2" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=184273771]
+[node name="Column3" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=93828439]
 layout_mode = 2
 
-[node name="Card" parent="MainLayout/Tableau/Column2" unique_id=276978670 instance=ExtResource("1_bw3vb")]
-layout_mode = 2
-word = "Cat"
-category = "Animals"
-
-[node name="Column3" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=155470765]
+[node name="Column4" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=1026247948]
 layout_mode = 2
 
-[node name="Card" parent="MainLayout/Tableau/Column3" unique_id=1606529656 instance=ExtResource("1_bw3vb")]
-layout_mode = 2
-word = "Cow"
-category = "Animals"
-
-[node name="Column4" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=595550167]
-layout_mode = 2
-
-[node name="Card2" parent="MainLayout/Tableau/Column4" unique_id=617339873 instance=ExtResource("1_bw3vb")]
-layout_mode = 2
-word = "Nail"
-
-[node name="Column5" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=1952225119]
+[node name="Column5" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=1350186016]
 layout_mode = 2
 
 [node name="Card" parent="MainLayout/Tableau/Column5" unique_id=1933959540 instance=ExtResource("1_bw3vb")]
@@ -80,7 +83,7 @@ layout_mode = 2
 word = "Apple"
 category = "Fruit"
 
-[node name="Column6" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=514835604]
+[node name="Column6" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=775079338]
 layout_mode = 2
 
 [node name="Card" parent="MainLayout/Tableau/Column6" unique_id=739165022 instance=ExtResource("1_bw3vb")]
@@ -88,7 +91,7 @@ layout_mode = 2
 word = "Pear"
 category = "Fruit"
 
-[node name="Column7" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=40607983]
+[node name="Column7" type="VBoxContainer" parent="MainLayout/Tableau" unique_id=498421731]
 layout_mode = 2
 
 [node name="Card" parent="MainLayout/Tableau/Column7" unique_id=1603665433 instance=ExtResource("1_bw3vb")]

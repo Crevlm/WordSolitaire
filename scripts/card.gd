@@ -6,11 +6,18 @@ signal card_clicked(card)
 @export var category: String = "Animals"
 @export var is_category_card: bool = false
 @export var required_count: int = 0
+@export var is_face_down: bool = false
+
 
 @onready var word_label = $WordLabel
+@onready var card_back = $CardBack
+
 
 func _ready():
-	word_label.text = word
+	update_visual()
+	
+	
+	
 func _pressed():
 	if is_category_card:
 		print("Category Card: " + word)
@@ -27,6 +34,9 @@ func set_selected(is_selected: bool):
 
 # Prints that the current selected card is being dragged 
 func _get_drag_data(position):
+	
+	if is_face_down:
+		return null
 	print("Dragging: " + word)
 	return self
 
@@ -56,6 +66,22 @@ func _drop_data(position, data):
 		return
 
 	# Otherwise this is normal tableau movement.
+	var old_column = data.get_parent()
 	data.reparent(get_parent())
 	
+	var board = get_tree().current_scene.reveal_top_card(old_column)
 	
+	
+func update_visual():
+	if is_face_down:
+		card_back.visible = true
+		word_label.visible = false
+	else:
+		card_back.visible = false
+		word_label.visible = true
+		word_label.text = word
+		
+
+func reveal():
+	is_face_down = false
+	update_visual()

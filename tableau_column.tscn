@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://2wdy3sqw1ca3"]
+
+[ext_resource type="Script" uid="uid://0ll7gauaa1vr" path="res://scripts/tableau_column.gd" id="1_6ljt5"]
+
+[node name="TableauColumn" type="Control" unique_id=1856529956]
+custom_minimum_size = Vector2(90, 300)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_6ljt5")
